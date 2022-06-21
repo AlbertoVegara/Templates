@@ -18,6 +18,8 @@ spec:
         - artifact_id
         - description
         - owner
+        - contents
+        - filename
       properties:
         component_id:
           title: Project ID
@@ -83,11 +85,19 @@ spec:
     #     path: ${{parameters.path}}
 
 
-    - id: downloadfile
-      name: Zipping project
-      action: altia:downloadfile
-      input:
-        path: ${{parameters.path}}
+      - id: createNewFile
+        name: Creating a file
+        action: altia:create-file-1
+        input:
+          contents: Hello World!
+          filename: fileNameTest.txt
+
+
+    # - id: downloadfile
+    #   name: Zipping project
+    #   action: altia:downloadfile
+    #   input:
+    #     path: ${{parameters.path}}
         #path: "/home/node/${{ parameters.name }}"
         #path: 'C:\Users\tahir.farooq\Downloads\ArqRef'
 
