@@ -41,6 +41,9 @@ spec:
           ui:options:
             allowedKinds:
               - Group
+        contents:
+          title: Content
+          type: String
 
     - title: Project name
       required:
@@ -85,12 +88,12 @@ spec:
     #     path: ${{parameters.path}}
 
 
-      - id: createNewFile
-        name: Creating a file
-        action: altia:create-file-1
-        input:
-          contents: Hello World!
-          filename: fileNameTest.txt
+    - id: createNewFile
+      name: Creating a file
+      action: altia:create-file-1
+      input:
+        contents: Hello World!
+        filename: fileNameTest.txt
 
 
     # - id: downloadfile
