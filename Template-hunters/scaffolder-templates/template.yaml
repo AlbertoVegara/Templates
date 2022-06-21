@@ -41,9 +41,6 @@ spec:
           ui:options:
             allowedKinds:
               - Group
-        contents:
-          title: Content
-          type: String
 
     - title: Project name
       required:
