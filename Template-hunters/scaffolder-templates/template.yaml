@@ -95,7 +95,7 @@ spec:
       name: Zipping project
       action: altia:downloadfile
       input:
-        path: ${{parameters.path}}
+        path: 'C:\Users\alberto.vegara\Desktop'
         #path: "/home/node/${{ parameters.name }}"
         #path: 'C:\Users\tahir.farooq\Downloads\ArqRef'
 
