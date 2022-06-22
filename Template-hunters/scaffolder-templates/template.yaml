@@ -91,11 +91,11 @@ spec:
         filename: fileNameTest.txt
 
 
-    # - id: downloadfile
-    #   name: Zipping project
-    #   action: altia:downloadfile
-    #   input:
-    #     path: ${{parameters.path}}
+    - id: downloadfile
+      name: Zipping project
+      action: altia:downloadfile
+      input:
+        path: ${{parameters.path}}
         #path: "/home/node/${{ parameters.name }}"
         #path: 'C:\Users\tahir.farooq\Downloads\ArqRef'
 
